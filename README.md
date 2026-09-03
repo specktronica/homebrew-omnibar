@@ -1,18 +1,19 @@
 # Specktronica Omnibar
 
-## How do I install these formulae?
+Homebrew tap for [Omnibar](https://github.com/specktronica/omnibar), a Windows-style taskbar for macOS.
 
-`brew install specktronica/omnibar/<formula>`
+## Install
 
-Or `brew tap specktronica/omnibar` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "specktronica/omnibar"
-brew "<formula>"
+```bash
+brew install --cask specktronica/omnibar/omnibar
 ```
 
-## Documentation
+macOS 14 or later. After install, grant Accessibility in System Settings. Screen Recording is optional (live hover thumbnails).
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+## Updating the cask
+
+After publishing a GitHub Release of `Omnibar-<version>.zip` from the app repo:
+
+1. Set `version` in `Casks/omnibar.rb` to the new marketing version.
+2. Set `sha256` to the SHA-256 printed by `make release`.
+3. Commit and push this tap.
