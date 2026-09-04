@@ -1,6 +1,6 @@
 cask "omnibar" do
-  version "1.1.0"
-  sha256 "d024fb1ce3727a9e0209e730d308178c83795efb9317a72433e6609266bc6dd8"
+  version "1.1.1"
+  sha256 "3a054cef38044fe4ec64e090896fc8073d20cb9aa02a6e45de38691a4333b12c"
 
   url "https://github.com/specktronica/omnibar/releases/download/v#{version}/Omnibar-#{version}.zip"
   name "Omnibar"
